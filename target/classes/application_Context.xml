@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- Define your beans here -->
+	<!-- <bean id="addition"
+		class="org.ncu.Calculator_MWF_SetGet.AdditionService"></bean>
+	<bean id="subtraction"
+		class="org.ncu.Calculator_MWF_SetGet.SubtractionService"></bean>
+	<bean id="multiplication"
+		class="org.ncu.Calculator_MWF_SetGet.MultiplicationService"></bean>
+	<bean id="division"
+		class="org.ncu.Calculator_MWF_SetGet.DivisionService"></bean>
+
+	SETTER INJECTION
+	<bean id="Calculatore"
+		class="org.ncu.Calculator_MWF_SetGet.CalculatorFactory">
+		<property name="Add" ref="addition"></property>
+		<property name="Sub" ref="subtraction"></property>
+		<property name="Mult" ref="multiplication"></property>
+		<property name="Div" ref="division"></property>
+	</bean> -->
+	
+	<context:component-scan base-package = "org.ncu.Calculator_MWF_SetGet"/>
+
+</beans>
